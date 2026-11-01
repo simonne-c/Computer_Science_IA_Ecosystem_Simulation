@@ -1,0 +1,73 @@
+/* Troubleshooting the syntax throughout the code was done with some help of both outside resources cited in the bibliography and the LLM helper provided by the Visual Studios application. */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+}
+
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+.panel {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+select,
+input,
+button {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 8px;
+}
+
+
+.organism-card {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+
+canvas {
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.dashboard > div {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}

@@ -1,0 +1,88 @@
+{
+    "terrains": {
+        "forest": {
+            "name": "Forest",
+            "description": "A densely vegetated environment with abundant plant life."
+        },
+        "desert": {
+            "name": "Desert",
+            "description": "A dry environment with limited vegetation and water."
+        },
+        "grassland": {
+            "name": "Grassland",
+            "description": "An open environment dominated by grasses."
+        }
+    },
+
+
+    "climates": {
+        "temperate": {
+            "name": "Temperate",
+            "description": "Moderate temperatures with seasonal variation."
+        },
+        "tropical": {
+            "name": "Tropical",
+            "description": "Warm temperatures with high moisture."
+        },
+        "arid": {
+            "name": "Arid",
+            "description": "Very dry conditions with low precipitation."
+        }
+    },
+
+
+    "resources": {
+        "food": {
+            "name": "Food",
+            "description": "Food available for organisms."
+        },
+        "water": {
+            "name": "Water",
+            "description": "Water available for organisms."
+        },
+        "shelter": {
+            "name": "Shelter",
+            "description": "Places that can protect organisms."
+        }
+    },
+
+
+    "organisms": {
+        "rabbit": {
+            "name": "Rabbit",
+            "role": "Herbivore",
+            "color": "#8b6f47",
+            "base_speed": 3.0,
+            "base_size": 12,
+            "predator": false,
+            "prey": true
+        },
+        "fox": {
+            "name": "Fox",
+            "role": "Predator",
+            "color": "#d46a2e",
+            "base_speed": 3.2,
+            "base_size": 15,
+            "predator": true,
+            "prey": false
+        },
+        "deer": {
+            "name": "Deer",
+            "role": "Herbivore",
+            "color": "#6f5135",
+            "base_speed": 2.5,
+            "base_size": 16,
+            "predator": false,
+            "prey": true
+        },
+        "hawk": {
+            "name": "Hawk",
+            "role": "Predator",
+            "color": "#4d4d4d",
+            "base_speed": 3.8,
+            "base_size": 13,
+            "predator": true,
+            "prey": true
+        }
+    }
+}

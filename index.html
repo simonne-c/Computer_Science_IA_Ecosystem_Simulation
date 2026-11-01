@@ -1,0 +1,142 @@
+<!--Troubleshooting the syntax throughout the code was done with some help of both outside resources cited in the bibliography and the LLM helper provided by the Visual Studios application.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem Simulator</title>
+
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<body>
+
+
+<main>
+
+
+    <h1>Ecosystem Simulator</h1>
+
+
+    <section class="panel">
+
+
+        <h2>1. Environment</h2>
+
+
+        <label>Terrain</label>
+        <select id="terrain">
+            <option value="forest">Forest</option>
+            <option value="desert">Desert</option>
+            <option value="grassland">Grassland</option>
+        </select>
+
+
+        <label>Climate</label>
+        <select id="climate">
+            <option value="temperate">Temperate</option>
+            <option value="tropical">Tropical</option>
+            <option value="arid">Arid</option>
+        </select>
+
+
+        <label>Food: <span id="foodValue">60</span></label>
+        <input id="food" type="range" min="0" max="100" value="60">
+
+
+        <label>Water: <span id="waterValue">60</span></label>
+        <input id="water" type="range" min="0" max="100" value="60">
+
+
+        <label>Shelter: <span id="shelterValue">50</span></label>
+        <input id="shelter" type="range" min="0" max="100" value="50">
+
+
+        <h2>2. Organisms</h2>
+
+
+        <!-- JavaScript creates all three organism cards from one template. -->
+        <div id="organismArea"></div>
+
+
+        <button id="createButton">Create Simulation</button>
+        <button id="startButton">Start</button>
+        <button id="pauseButton">Pause</button>
+        <button id="resetButton">Reset</button>
+        <button id="saveButton">Save Configuration</button>
+        <button id="loadButton">Load Configuration</button>
+
+
+        <p id="message"></p>
+
+
+    </section>
+
+
+    <section class="panel">
+
+
+        <h2 id="environmentTitle">No environment created</h2>
+        <p id="environmentDescription">
+            Choose settings and create a simulation.
+        </p>
+
+
+        <h3>Generation: <span id="generation">0</span></h3>
+
+
+        <canvas id="simulationCanvas"
+                width="700"
+                height="450"></canvas>
+
+
+        <div class="dashboard">
+
+
+            <div>
+                <h3>Population</h3>
+                <p id="populationInfo">No simulation</p>
+            </div>
+
+
+            <div>
+                <h3>Resources</h3>
+                <p id="resourceInfo">No simulation</p>
+            </div>
+
+
+            <div>
+                <h3>Organism Decisions</h3>
+                <p id="decisionInfo">No simulation</p>
+            </div>
+
+
+        </div>
+
+
+        <div>
+            <h3>Selected Organism</h3>
+            <p id="selectedOrganism">
+                Click an organism on the canvas.
+            </p>
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>
